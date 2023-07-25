@@ -48,6 +48,7 @@
         justify-content: space-between;
     }
     .menu{
+        max-height: 8%;
         /*border: 4px dashed magenta;*/
     }
     h2{
