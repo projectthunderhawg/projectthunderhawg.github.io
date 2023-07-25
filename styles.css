@@ -24,7 +24,6 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center; /* Center the title text */
     flex-grow: 1; /* Allow the title to take the available space */
-    border: 3px dashed orange;
   }
   
   h1 {
