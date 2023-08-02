@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%; /* Set the root elements to take full viewport height */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Adjust this to space items horizontally */
+    align-items: center; /* Center the content vertically */
+    width: 100%;
+    height: 10%; /* You can adjust this if needed */
+    background-color: rgba(0, 48, 143);
+  }
+  
+  .title {
+    color: white;
+    left: 20px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center; /* Center the title text */
+    flex-grow: 1; /* Allow the title to take the available space */
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .menu {
+    /* Add any relevant styles to style your menu and make it right-aligned */
+     /* Add some space to the right to separate from the edge */
+  }
+  
+  /* Rest of your media queries */
+  
+
+  @media screen and (min-width: 834px) {
+    /* PCs */
+    .title {
+      font-size: xx-large;
+      justify-content: center;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+    .menu{
+        display: none;
+        /*border: 4px dashed magenta;*/
+    }
+    h2{
+        display: none;
+    }
+    
+    .menu{
+        transform: scale(1);
+        margin-right: 30px;
+    }
+    h3{
+        display: none;
+    }
+  }
+  
+  @media screen and (max-width: 834px) and (min-width: 321px) {
+    /* Mobile */
+    .title {
+      font-size: small;
+      padding: 25px;
+    }
+    .navbar {
+        justify-content: left;
+    }
+    h2{
+        display: none;  
+    }
+    
+    .menu{
+    transform: scale(0.5);
+    margin-right: 10px;
+    }
+}   
+
+  @media screen and (max-width: 321px) and (min-width: 0px) {
+    /* Mobile */
+    .content {
+        display: none;
+    }
+    .navbar {
+        display: none;
+    }
+    h2{
+        font-family: 'Courier New', monospace;        font-weight: 700;
+        margin: 15px;
+    }
+    h3{
+        display: none;
+    }
+  }
+  
