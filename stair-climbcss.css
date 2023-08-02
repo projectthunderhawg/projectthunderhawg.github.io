@@ -10,6 +10,7 @@
   .information{
     display: flex;
     height: inherit;
+    
   }
   
   .navbar {
@@ -44,7 +45,7 @@
     background-image: url("../images/razorbackstadium.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
-    background-size: contain;
+    background-size:cover;
   }
 
   @media screen and (min-width: 834px) {
