@@ -7,6 +7,10 @@
   html, body {
     height: 100%; /* Set the root elements to take full viewport height */
   }
+  .information{
+    display: flex;
+    height: inherit;
+  }
   
   .navbar {
     display: flex;
@@ -36,7 +40,12 @@
   }
   
   /* Rest of your media queries */
-  
+  .information{
+    background-image: url("../images/razorbackstadium.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+  }
 
   @media screen and (min-width: 834px) {
     /* PCs */
