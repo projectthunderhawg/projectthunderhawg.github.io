@@ -17,22 +17,8 @@
     display: flex;
     width: 100%;
 
-    justify-content:center;
-    /**/
-    padding-top: 80px;
-    position: static;
-    cursor: pointer;
-
     /*border: 10px dashed orange;*/
-  }
-  .center{
-    height: 200%;
-    display: flex;
-    position: relative;
-    border: 1px dashed orange;
-
-}
-    
+  }    
 
   .Buttons {
 	display: flex;
@@ -128,12 +114,24 @@
 
   @media screen and (min-width: 834px) {
     /* PCs */
+    .links{
+        display: flex;
+        width: 100%;
+    
+        justify-content:center;
+        /**/
+        padding-top: 80px;
+        position: static;
+        cursor: pointer;
+    }
+
     .title {
       font-size: xx-large;
       justify-content: center;
     }
     .navbar {
         justify-content: space-between;
+        min-height: 80px;
     }
     .menu{
         display: none;
@@ -163,6 +161,36 @@
       font-size: small;
       padding: 25px;
     }
+
+    .links{
+        display: block;
+        width: 100%;
+        justify-content:center;
+        /**/
+        padding-top: 20px;
+        min-height: 20px;
+        position: static;
+        cursor: pointer;
+    }
+
+    .Top{
+        display: flex;
+        justify-content:center;
+        position: relative;
+    }
+    .Middle{
+        display: flex;
+        justify-content:center;
+        position: relative;
+    }
+    .Bottom{
+        display: flex;
+        justify-content:center;
+        position: relative;
+    }
+    .information{
+        display: flex;
+    }
     .navbar {
         justify-content: left;
     }
@@ -175,10 +203,11 @@
     margin-right: 10px;
     }
 
+
 }   
 
   @media screen and (max-width: 321px) and (min-width: 0px) {
-    /* Mobile */
+    /* Too small of a screen */
     .content {
         display: none;
     }
