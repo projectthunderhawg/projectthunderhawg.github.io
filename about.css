@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  html, body {
+    height: 100%; /* Set the root elements to take full viewport height */
+  }
+  
+  .Buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+	cursor: pointer;
+	font-size: 1.25rem;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	padding: 1rem 1.5rem;
+	border-radius: 0.5rem;
+	color: white;
+	margin-bottom: 2rem;
+    
+}  
+
+#Reactive {
+	position: relative;
+	background-color: transparent;
+	color: rgb(0, 0, 0);
+	border: 3px solid rgb(0, 0, 0);
+	transition: 0.4s ease-out;
+
+}
+
+#Reactive span {
+	position: relative;
+	z-index: 2;
+    text-decoration: none;
+}
+
+#Reactive:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 0;
+	width: calc(100% + 2rem);
+	height: calc(100% + 2rem);
+	border-radius: 0.5rem;
+	border: 3px solid lightslategray;
+	opacity: 0;
+	transition: 0.4s ease-out;
+}
+
+
+#Reactive:hover {
+	border-color: rgb(137, 1, 1);
+    color: white;
+    
+}
+p{
+    padding: 2%;
+    text-align: center;
+}
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Adjust this to space items horizontally */
+    align-items: center; /* Center the content vertically */
+    width: 100%;
+    height: 10%; /* You can adjust this if needed */
+    background-color: rgba(0, 48, 143);
+  }
+  
+  .title {
+    color: white;
+    left: 20px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center; /* Center the title text */
+    flex-grow: 1; /* Allow the title to take the available space */
+  }
+  
+  h1 {
+    margin: 0;
+  }
+
+  
+  .Button-Container{
+    display: flex;
+    justify-content: center;
+}
+
+
+  @media screen and (min-width: 834px) {
+    /* PCs */
+    .links{
+        display: flex;
+        width: 100%;
+    
+        justify-content:center;
+        /**/
+        padding-top: 80px;
+        position: static;
+        cursor: pointer;
+    }
+
+    .title {
+      font-size: xx-large;
+      justify-content: center;
+    }
+    .navbar {
+        justify-content: space-between;
+        min-height: 80px;
+    }
+    .menu{
+        display: none;
+        /*border: 4px dashed magenta;*/
+    }
+    h2{
+        display: none;
+    }
+    
+    .menu{
+        transform: scale(1);
+        margin-right: 30px;
+    }
+    h3{
+        display: none;
+    }
+ 
+  }
+  
+  @media screen and (max-width: 834px) and (min-width: 321px) {
+    /* Mobile */
+    .title {
+      font-size: small;
+      padding: 25px;
+    }
+
+
+    .navbar {
+        justify-content: left;
+    }
+    h2{
+        display: none;  
+    }
+    
+    .menu{
+    transform: scale(0.5);
+    margin-right: 10px;
+    }
+
+
+}   
+
+  @media screen and (max-width: 321px) and (min-width: 0px) {
+    /* Too small of a screen */
+    .content {
+        display: none;
+    }
+    .navbar {
+        display: none;
+    }
+    h2{
+        font-family: 'Courier New', monospace;        font-weight: 700;
+        margin: 15px;
+    }
+    h3{
+        display: none;
+    }
+    .information{
+        display: none;
+    }
+  }
