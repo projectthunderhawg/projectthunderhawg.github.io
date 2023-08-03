@@ -54,10 +54,6 @@
     
 }  
 
-.Lower{
-
-}
-
 #Reactive {
 	position: relative;
 	background-color: transparent;
@@ -196,14 +192,4 @@
     h3{
         display: none;
     }
-  }
-  
-  body:after {
-    content:"";
-    position: absolute;
-    z-index: 20;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    border-left: 2px dotted rgb(255, 255, 255);
   }
