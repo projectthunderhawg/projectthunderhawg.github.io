@@ -185,6 +185,7 @@
     }
     .information{
         display: flex;
+        padding-top: 20px;
     }
     .navbar {
         justify-content: left;
@@ -197,8 +198,13 @@
     transform: scale(0.5);
     margin-right: 10px;
     }
-
-
+    .Buttons{
+        margin-bottom: 6vh;
+    }
+    .menu
+    {
+        display: none;
+    }
 }   
 
   @media screen and (max-width: 321px) and (min-width: 0px) {
@@ -219,4 +225,5 @@
     .information{
         display: none;
     }
+    
   }
