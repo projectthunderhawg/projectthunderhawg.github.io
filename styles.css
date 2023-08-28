@@ -34,6 +34,10 @@
     /* Add any relevant styles to style your menu and make it right-aligned */
      /* Add some space to the right to separate from the edge */
   }
+  .video{
+    display: flex;
+    justify-content: center;
+  }
   
   /* Rest of your media queries */
   
@@ -68,9 +72,12 @@
     .title {
       font-size: small;
       padding: 25px;
+
+      text-align: left;
+      /*border: 2px orange dashed;*/
     }
     .navbar {
-        justify-content: left;
+
     }
     h2{
         display: none;  
@@ -79,6 +86,21 @@
     .menu{
     transform: scale(0.5);
     margin-right: 10px;
+    border: 2px purple dashed;
+    padding:  ;
+    }
+    .video{
+
+    }
+    .header{
+      justify-content: center;
+      display: flex;
+      margin-top: 5px;
+      margin-bottom: ;
+    }
+    .text{
+      padding: 20px;
+      text-align: center;
     }
 }   
 
