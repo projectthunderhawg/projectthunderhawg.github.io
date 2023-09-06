@@ -18,7 +18,12 @@
     width: 100%;
 
     /*border: 10px dashed orange;*/
-  }    
+  }   
+  
+  #top-bar{
+    color: black;
+    text-align: center;
+  }
 
   .Buttons {
 	display: flex;
@@ -129,7 +134,7 @@
         min-height: 80px;
     }
     .menu{
-        display: none;
+        /*display: none;*/
         /*border: 4px dashed magenta;*/
     }
     h2{
