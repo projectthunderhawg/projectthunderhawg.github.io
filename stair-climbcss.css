@@ -134,7 +134,7 @@
         min-height: 80px;
     }
     .menu{
-        /*display: none;*/
+        display: none;
         /*border: 4px dashed magenta;*/
     }
     h2{
@@ -146,7 +146,7 @@
         margin-right: 30px;
     }
     h3{
-        display: none;
+        /*display: none;*/
     }
     .spacer{
         display: flex;
