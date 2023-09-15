@@ -146,7 +146,8 @@
         margin-right: 30px;
     }
     h3{
-        /*display: none;*/
+        display: none;
+        /* T-shirts sold out */
     }
     .spacer{
         display: flex;
